@@ -5,6 +5,7 @@ import Showroom from './pages/Showroom';
 import Product from './pages/Product';
 import News from './pages/News';
 import Detail from './pages/Detail';
+import Market from './pages/Market';
 import {
   BrowserRouter as Router,
   Routes,
@@ -23,7 +24,8 @@ function App() {
           <Route path="/showroom" element={<Showroom />} />
           <Route path="/product" element={<Product />} />
           <Route path="/news" element={<News />} />
-          <Route path="/detail" element={<Detail />} />
+          <Route path="/detail/:id" element={<Detail />} />
+          <Route path="/market" element={<Market />} />
         </Routes>
       </Router>
 
