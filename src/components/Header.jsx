@@ -45,7 +45,9 @@ function Header() {
         </ul>
         <div className="header-icon">
             <img src={call} class="header-icon-item button-hover" name="call-outline" alt=""></img>
+            <Link to="/cart">
             <img src={cart} class="header-icon-item button-hover" name="cart-outline" alt=""></img>
+            </Link>
             <img src={search} class="header-icon-item button-hover" name="search-outline" alt=""></img>
         </div>
     </div>

@@ -13,6 +13,8 @@ import {
   Link,
 } from "react-router-dom";
 import { Navigate, useNavigate  } from 'react-router';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="/market" element={<Market />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </Router>
 
