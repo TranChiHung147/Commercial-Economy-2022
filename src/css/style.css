@@ -82,23 +82,24 @@ body {
 
 .banner-search-container {
   color: white;
+  width: 400px;
   position: relative;
 }
 
 .banner-search-input {
+  display: inline-block;
   padding: 15px;
   border-radius: 10px;
-  width: 60vw;
-  border: 0;
 }
 
 .banner-search-icon {
+  display: inline-block;
   background-color: #307fe2;
-  padding: 15px;
-  position: absolute;
   border: 0;
+  position: absolute;
+  top: 0px;
+  right: -90px;
   border-radius: 0 10px 10px 0;
-  transform: translateX(-42px);
 }
 
 .button-hover:hover {

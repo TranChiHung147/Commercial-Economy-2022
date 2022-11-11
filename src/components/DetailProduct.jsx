@@ -1,17 +1,25 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
+import labeldata from '../labeldata';
 
 function DetailProduct() {
+  const { id } = useParams();
+  var product =  {};
+  if (id <= 5) product = labeldata.xiaomi[id-1]
+  else if (id <= 11) product = labeldata.ecovacs[id-6]
+  else product = labeldata.liectroux[id-12];
+  console.log(product);
   return (
     <>
   <div className="center">
-    <img src={require("../detail_img/1.png")} alt="" />
+    <img src={product.image} alt="" />
     <img src={require("../detail_img/2.png")} style={{ width: "100%" }} alt="" />
   </div>
   <div className="under">
     <div className="price">
       <ion-icon className="price-tag-icon" name="pricetags-outline" />
       <div className="price-text">Giá bán</div>
-      <div className="price-self">5,990,000 đ</div>
+      <div className="price-self">{product.priceOn}</div>
     </div>
     <div className="more">
       <ion-icon name="heart-circle-outline" className="heart-btn" />
@@ -25,18 +33,17 @@ function DetailProduct() {
     <input type="radio" name="form-detail" defaultValue="xam" />
     <label>Xám</label>
   </form>
-  <div className="name-product">Robot hút bụi Powerbot-E (VR05R5050WK)</div>
+  <div className="name-product">{product.name}</div>
   <div className="product-describe">
     Thông tin mô tả
     <ul>
-      Hút sạch bụi, lau sạch nhà cùng lúc
-      <li>2 trong 1 - Hút bụi và lau nhà</li>
-      <li>Công suất hút mạnh mẽ</li>
-      <li>150 phút làm sạch liên tục</li>
-      <li>Làm sạch mọi ngóc ngách, chống va chạm</li>
-      <li>Điều khiển thông minh mọi lúc, mọi nơi</li>
-      <li>Linh hoạt lựa chọn chế độ làm sạch</li>
-    </ul>
+        <p>{product.title}</p>
+        {
+          product.describe.map((line) =>
+          <li>{line}</li>
+          )
+        }
+    </ul> 
   </div>
   <div className="more-detail">
     <div className="detail">Thông tin chi tiết</div>

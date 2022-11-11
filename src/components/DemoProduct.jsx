@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../data.js';
+import labeldata from '../labeldata.js';
 
 function DemoProduct() {
   return (
@@ -7,7 +7,7 @@ function DemoProduct() {
     <div className="DP-text">Top robot hút bụi nổi bật</div>
     <div className="DP-container">
     {
-      data.products.map((product) =>
+      labeldata.xiaomi.map((product) =>
         <div className="DP-item">
           <a href={`/detail/${product._id}`}>
             <img src={product.image}  alt={product.label} className="DPi-image" />

@@ -7,7 +7,7 @@ const data = {
             name: 'Xiaomi Vacuum 2 pro',
             label: 'Xiaomi',
             priceOff: '19,000,000 đ',
-            priceOn: '116,900,000 đ'
+            priceOn: '16,900,000 đ'
         },    
 
         {
@@ -87,7 +87,7 @@ const data = {
             _id:'1',
             image: require('./img/SmallMarket/1.png'),
             sale: '-20%',
-            name: 'iLife 12 Pro Max',
+            name: 'Hubspot',
             label: 'iLife',
             priceOff: '18,000,000 đ',
             priceOn: '17,000,000 đ'
@@ -97,30 +97,33 @@ const data = {
             _id:'2',
             image: require('./img/SmallMarket/2.png'),
             sale: '-20%',
-            name: 'iLife 12 Pro Max',
-            label: 'iLife',
+            name: 'Ecovacs Deebot U2 Pro',
+            label: 'Ecovacs',
             priceOff: '18,000,000 đ',
-            priceOn: '17,000,000 đ'
+            priceOn: '6.900.000 ₫',
+            describe: 'Robot hút bụi Deebot U2 Pro mang đến hiệu xuất làm sạch tối đa, với sự kết hợp hệ thống quét hút hiệu năng cao với chế độ Max+ và hệ thống lau tiên tiến có thể điều chính độ ẩm khăn lau để phù hợp với từng nhu cầu làm sạch khác nhau. Với Deebot U2 Pro bạn hoàn toàn yên tâm về việc lau dọn sàn nhà, U2 pro xử lý tốt nhiều loại bụi rác, vết bẩn sơ cấp, đặc biệt là tóc và lông thú.'
         },
 
         {
             _id:'3',
             image: require('./img/SmallMarket/3.png'),
             sale: '-20%',
-            name: 'iLife 12 Pro Max',
-            label: 'iLife',
+            name: 'Ecovacs Deebot T8 AIVI',
+            label: 'Ecovacs',
             priceOff: '18,000,000 đ',
-            priceOn: '17,000,000 đ'
+            priceOn: '14.900.000 ₫',
+            describe: 'Robot hút bụi Deebot Ozmo T8 AIVI là sự kết hợp giữa trí tuệ nhân tạo ”AIVI” và một cỗ máy làm sạch hoàn hảo. Deebot T8 có thể nhận biết và tránh các đồ vật: tất, dép, dây điện, chân ghế,… giảm 60% việc mắc kẹt và tắc. T8 được nâng cấp hệ thống laser giúp đo khoảng cách xa gấp 2 lần và chính xác gấp 4 lần. Công nghệ tăng áp kết hợp lau thông minh Deebot T8 mang đến hiệu xuất làm sạch vượt trội.'
         },
 
         {
             _id:'4',
             image: require('./img/SmallMarket/4.png'),
             sale: '-20%',
-            name: 'iLife 12 Pro Max',
-            label: 'iLife',
+            name: 'Xiaomi Roborock S7',
+            label: 'Xiaomi',
             priceOff: '18,000,000 đ',
-            priceOn: '17,000,000 đ'
+            priceOn: '11,490,000 đ',
+            describe: 'Một siêu phẩm hoàn toàn mới mang tới sự đột phá về công nghệ trong năm 2021. Đó chính là Robot hút bụi lau nhà Xiaomi Roborock S7 đến từ thương hiệu Roborock. Đây được coi là dòng hút bụi cao cấp của Xiaomi thời điểm hiện tại với công nghệ lau rung lần đầu tiên được áp dụng đem đến khả năng làm sạch vượt trội mà các dòng Robot trước đây chưa làm được.'
         },
 
         {

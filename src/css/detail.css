@@ -410,20 +410,9 @@ margin-left: 0;
 .product-describe{
 padding:10px;
 font-weight: 700;
-
+width: 50%;
 }
 
-.product-describe ul{
-    font-weight: 700;
-}
-
-.product-describe .text-desc{
-    padding:5px;
-}
-
-.product-describe ul{
-    font-weight: 500;
-}
 
 .more-detail{
 background-color: #EDF4FF;
