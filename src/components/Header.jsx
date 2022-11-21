@@ -40,8 +40,10 @@ function Header() {
             <li className="header-slider-item">Tin tức</li>
             </LinkItem>
 
-            
+            <LinkItem to='/warranty'>
             <li className="header-slider-item">Bảo hành</li>
+            </LinkItem>
+            
         </ul>
         <div className="header-icon">
             <img src={call} class="header-icon-item button-hover" name="call-outline" alt=""></img>

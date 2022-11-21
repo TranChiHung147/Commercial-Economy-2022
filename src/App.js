@@ -1,21 +1,19 @@
-
-import './css/style.css';
 import Home from './pages/Home';
 import Showroom from './pages/Showroom';
 import Product from './pages/Product';
 import News from './pages/News';
 import Detail from './pages/Detail';
 import Market from './pages/Market';
+import Warranty from './pages/Warranty';
+
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
 } from "react-router-dom";
-import { Navigate, useNavigate  } from 'react-router';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
-
+import Compare from './components/Compare';
 
 function App() {
   return (
@@ -30,9 +28,10 @@ function App() {
           <Route path="/market" element={<Market />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/warranty" element={<Warranty />} />
+          <Route path="/compare" element={<Compare />} />
         </Routes>
       </Router>
-
     </div>
   );
 }
