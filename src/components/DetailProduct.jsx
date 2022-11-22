@@ -1,10 +1,9 @@
 import React, {useState} from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 import labeldata from '../labeldata';
 import '../css/detail.css';
 import  Compare from '../components/Compare';
 
-  
 
 function DetailProduct() {
 
@@ -24,9 +23,9 @@ function DetailProduct() {
   }
 
   const { id } = useParams();
-  var product =  {};
-  if (id <= 5) product = labeldata.xiaomi[id-1]
-  else if (id <= 11) product = labeldata.ecovacs[id-6]
+  let product =  {};
+  if (id <= 5) product = labeldata.xiaomi[id-1];
+  else if (id <= 11)product = labeldata.ecovacs[id-6];
   else product = labeldata.liectroux[id-12];
   console.log(product);
   
@@ -58,8 +57,10 @@ function DetailProduct() {
       <div className="name-product">{product.name}</div>
       <div className="btn-group">
         <button className="btn-shopping"><ion-icon name="cart-outline" class="shopping-cart"></ion-icon>Mua ngay</button>
-        <button onClick={changeStyle} className="btn-compare"><ion-icon name="search-outline" class="compare-outline"></ion-icon>So sánh</button>
+        {style===true ? "" : <button onClick={changeStyle} className="btn-compare"><ion-icon name="search-outline" class="compare-outline"></ion-icon>So sánh</button>}
+        {style===false ? "" : <button className="btn-close-outline"><ion-icon onClick={closeCompare} name="close" class="close-outline-pop"></ion-icon></button>}
       </div>
+
       <div className="product-describe">
         Thông tin mô tả
         <ul>
@@ -74,7 +75,7 @@ function DetailProduct() {
       <div className="more-detail">
         <div className="detail">Thông tin chi tiết</div>
         <div className="hide" onClick={() => setShow(!show)}>
-          Ẩn bớt
+          {show===true? "Ẩn bớt" : "Xem thêm"}
           {show===true? <ion-icon name="chevron-up-outline" /> : <ion-icon name="chevron-down-outline" />}
         </div>
       </div>
@@ -128,7 +129,7 @@ function DetailProduct() {
       </div>}
     </div>
 
-    <Compare open={compare} onClose={closeCompare} />
+    <Compare open={compare} onClose={closeCompare}  handle={() => {setCompare(false); setStyle(true)}}  />
     </>
   )
 }

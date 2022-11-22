@@ -331,7 +331,7 @@ background-color: #307FE2;
         background-color: #fff;
         box-shadow: 1px 1px 1px 1px #ccc;
         border-radius: 20px;
-        padding-bottom: 10px;
+        padding: 16px;
     }
 
     .product2 {
@@ -341,6 +341,16 @@ background-color: #307FE2;
       padding-bottom: 10px;
       max-width: 50%;  
       margin-right: 15px;
+    }
+
+    .product3 {
+      background-color: #fff;
+      box-shadow: 1px 1px 1px 1px #ccc;
+      border-radius: 20px;
+      padding-bottom: 10px;
+      max-width: 50%;  
+      margin-right: 15px;
+      
     }
 
     .compare-form {
@@ -364,7 +374,7 @@ background-color: #307FE2;
 .under{
 display: flex;
 justify-content: space-between;
-padding: 20px;
+padding: 20px 0px;
 }
 .under .price{
     display: flex;
@@ -416,9 +426,10 @@ padding:5px;
 
 .style-form{
 display: flex;
-width: 300px;
+width: 100%;
 font-weight: 700;
-padding:10px;
+padding: 10px 0px;
+border-bottom: 1px solid #ccc;
 }
 
 .style-form label{
@@ -427,8 +438,8 @@ font-weight: 500;
 
 .name-product{
 font-weight: 700;
-padding: 20px;
-border:rgba(174, 171, 171, 0.5) solid 1px;
+padding: 20px 0px;
+border-bottom: #ccc solid 1px;
 margin-left: 0;
 }
 
@@ -486,9 +497,11 @@ width: 300px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding-top: 16px;
+  padding: 16px 0px ;
   gap: 16px;
   height: 44px;
+  border-bottom: #ccc solid 1px;
+  max-width: 100%;
 }
 
 .btn-shopping, .btn-compare {
@@ -504,25 +517,34 @@ width: 300px;
   border: none;
   cursor: pointer;
   display: flex;
-  text-align: center;
   padding: 10px 10px;
 }
 
+.btn-close-outline {
+  width: auto;
+  height: 44px;
+  background-color: #307FE2;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  margin-left: auto;
+  padding: 10px 0px;
+}
 
 
-.shopping-cart {
-  width: 24px;
-  height: 24px;
+
+.shopping-cart, .compare-outline, .close-outline-pop {
+  width: 24px ;
+  height: 24px ;
   padding-left: 10px;
   padding-right: 10px;
   padding: 0px 10px 10px 10px;
-}
-
-.compare-outline {
-  width: 24px;
-  height: 24px;
-  padding: 0px 10px 10px 10px;
-
 }
 
 .close-outline-btn {
@@ -530,4 +552,5 @@ width: 300px;
   height: 24px;
   padding-top: 0px;
   text-align: end;
+  cursor: pointer;
 }

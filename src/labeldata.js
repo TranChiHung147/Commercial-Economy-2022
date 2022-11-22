@@ -95,7 +95,7 @@ const labeldata = {
     ecovacs: [
         {
             _id:'6',
-            image: require('./img/Ecovacs/1.webp'),
+            image: require('./img/Ecovacs/1.jpg'),
             sale: '-20%',
             name: 'Ecovacs Deebot T10 Omni',
             label: 'Ecovacs',
@@ -213,7 +213,7 @@ const labeldata = {
     liectroux: [
         {
             _id:'12',
-            image: require('./img/Ecovacs/1.webp'),
+            image: require('./img/Liectroux/p1.jpg'),
             sale: '-20%',
             name: 'Liectroux F5PRO',
             label: 'Liestroux',
@@ -233,7 +233,7 @@ const labeldata = {
 
         {
             _id:'13',
-            image: require('./img/Ecovacs/2.png'),
+            image: require('./img/Liectroux/p2.png'),
             sale: '-20%',
             name: 'Robot hút bụi lau nhà Liectroux C30B',
             label: 'Liectroux',
@@ -252,7 +252,7 @@ const labeldata = {
 
         {
             _id:'14',
-            image: require('./img/Ecovacs/3.png'),
+            image: require('./img/Liectroux/p3.jpg'),
             sale: '-20%',
             name: 'Robot hút bụi lau nhà Liectroux ZK901',
             label: 'Liectroux',
@@ -274,7 +274,7 @@ const labeldata = {
 
         {
             _id:'15',
-            image: require('./img/Ecovacs/4.png'),
+            image: require('./img/Liectroux/p4.jpg'),
             sale: '-20%',
             name: 'Liectroux F5Eco',
             label: 'Liectroux',
@@ -293,7 +293,7 @@ const labeldata = {
 
         {
             _id:'16',
-            image: require('./img/Ecovacs/5.png'),
+            image: require('./img/Liectroux/p5.jpg'),
             sale: '-20%',
             name: 'Liectroux XR500',
             label: 'Liectroux',
@@ -313,7 +313,7 @@ const labeldata = {
         
         {
             _id:'17',
-            image: require('./img/Ecovacs/6.png'),
+            image: require('./img/Liectroux/p6.png'),
             sale: '-20%',
             name: 'Liectroux B6009',
             label: 'Ecovacs',

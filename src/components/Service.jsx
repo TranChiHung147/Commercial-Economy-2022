@@ -45,6 +45,7 @@ const ServiceItem = styled.div`
     box-shadow: 1px 1px 1px 1px rgba(174, 171, 171, 0.5);
     width: 23%;
     text-align: center;
+    cursor: pointer;
 `;
 
 const TiImage = styled.img`
@@ -75,8 +76,9 @@ function Service() {
   return (
     <>
     <NeedWarranty open={needModal} onClose={() => setNeedModal(false)} />
+    <SearchWarranty open={modal} onClose={() => setModal(false)} />
     <Main>
-        <SearchWarranty open={modal} onClose={() => setModal(false)} />
+        
         
         <Chapter>
             <ChapterLine />
